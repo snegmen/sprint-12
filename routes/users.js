@@ -5,11 +5,10 @@ usersRouter.get('/', (req, res) => {
   res.send(users);
 });
 
-
 usersRouter.get('/:id', (req, res) => {
   const indexUser = users.findIndex((item) => item._id === req.params.id);
   if (indexUser < 0) {
-    res.status(404).send({ error: 'Такого пользователя нет' });
+    res.status(404).send({ message: 'Нет пользователя с таким id' });
   } else {
     res.send(users[indexUser]);
   }

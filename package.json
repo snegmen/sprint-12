@@ -1,7 +1,7 @@
 {
   "name": "sprint-12",
   "version": "1.0.0",
-  "description": "",
+  "description": "Study server with express.js",
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js",
