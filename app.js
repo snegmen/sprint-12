@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use('/cards', cardsRouter);
 app.use('/users', usersRouter);
 app.use('*', (req, res) => {
-  res.status(404).send({ messege: 'Запрашиваемый ресурс не найден' });
+  res.status(404).send({ message: 'Запрашиваемый ресурс не найден' });
 });
 
 app.listen(PORT);
